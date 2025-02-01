@@ -171,7 +171,7 @@
         this.drawLoading(Lampa.Lang.translate('loading'));
         var serviceURL = device.name;
         if(serviceURL.indexOf('http') === -1) serviceURL = 'http://' + serviceURL;
-        var soapAction = "urn:schemas-upnp-org:service:ContentDirectory:1#Browse";
+        var soapAction = '"urn:schemas-upnp-org:service:ContentDirectory:1#Browse"';
         var soapBody = `
     <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
         <s:Body>
